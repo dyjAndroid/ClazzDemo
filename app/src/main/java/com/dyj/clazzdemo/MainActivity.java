@@ -2,6 +2,7 @@ package com.dyj.clazzdemo;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Looper;
 import android.os.storage.StorageManager;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        Context c = null;
+//        try {
+//            //获取其他app某个类的方法
+//            c = createPackageContext("chroya.demo", Context.CONTEXT_INCLUDE_CODE | Context.CONTEXT_IGNORE_SECURITY);
+//            Class clazz = c.getClassLoader().loadClass("chroya.demo.Main");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
     }
 
     public void onClick(View view) {
